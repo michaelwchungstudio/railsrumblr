@@ -1,1 +1,16 @@
 <h1> wow hi this is the user index page </h1>
+<br>
+<hr>
+<br>
+<a href="/users/new">Make a new user</a>
+<br>
+<hr>
+<h2>list of users</h2>
+<hr>
+
+<% @users.each do |user| %>
+  <div> <%= user.email %> </div>
+  <div> <%= user.fname %> </div>
+  <div> <%= user.lname %> </div>
+  <hr>
+<% end %>

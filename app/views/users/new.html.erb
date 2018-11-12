@@ -1,1 +1,17 @@
 <h1> make a new user </h1>
+<br>
+<hr>
+<br>
+<%= form_for @user do |f| %>
+  <div>Email: <%= f.text_field :email, placeholder: "email" %></div>
+  <br>
+  <div>First Name: <%= f.text_field :fname, placeholder: "first name" %></div>
+  <br>
+  <div>Last Name: <%= f.text_field :lname, placeholder: "last name" %></div>
+  <br>
+  <div>Birthday: <%= f.text_field :birthday, placeholder: "birthday" %></div>
+  <br>
+  <div>Password: <%= f.text_field :password, placeholder: "password" %></div>
+  <br>
+  <%= f.submit %>
+<% end %>
